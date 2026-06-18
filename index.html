@@ -1,191 +1,23 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZICTEC — Rascunho de novo site institucional</title>
-  <meta name="description" content="Rascunho navegável do novo site institucional/comercial da ZICTEC para avaliação interna." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!doctype html><html lang="pt-BR"><head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZICTEC — Consultoria técnica e regulatória para operadoras</title><meta name="description" content="Protótipo multipágina do novo site ZICTEC.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --navy:#071831; --navy2:#0c2450; --blue:#154b9b; --purple:#5e2fb4; --orange:#ff7a1a; --orange2:#ff9f43;
-      --ink:#0b1830; --muted:#52627a; --line:#dbe4f0; --soft:#f5f8fc; --card:#ffffff; --peach:#fff1e6; --cyan:#eaf6ff;
-      --green:#17a36b; --red:#cc3a31; --shadow:0 24px 70px rgba(7,24,49,.16); --radius:26px; --max:1180px;
-    }
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;background:#fff;color:var(--ink);line-height:1.55}
-    a{color:inherit} .wrap{width:min(var(--max),calc(100% - 40px));margin:auto}.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.88);backdrop-filter:blur(18px);border-bottom:1px solid rgba(219,228,240,.9)}
-    .nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{display:flex;align-items:center;gap:14px;text-decoration:none}.brand img{height:42px;max-width:150px;object-fit:contain}.brand-mark{height:42px;width:42px;border-radius:13px;background:linear-gradient(135deg,var(--orange),var(--purple));box-shadow:0 10px 30px rgba(255,122,26,.28)}
-    .brand-text{font-weight:900;letter-spacing:.08em;color:var(--navy)}.menu{display:flex;gap:22px;align-items:center;font-weight:700;font-size:14px;color:#263a5d}.menu a{text-decoration:none}.menu a:hover{color:var(--orange)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:13px 18px;border-radius:999px;border:1px solid transparent;text-decoration:none;font-weight:800;white-space:nowrap}.btn.primary{background:linear-gradient(135deg,var(--orange),#ff5c21);color:#fff;box-shadow:0 18px 34px rgba(255,122,26,.28)}.btn.secondary{background:#fff;color:var(--navy);border-color:rgba(255,255,255,.28)}.btn.ghost{border-color:var(--line);background:#fff;color:var(--navy)}
-    .hero{position:relative;overflow:hidden;background:radial-gradient(circle at 88% 6%,rgba(255,122,26,.34),transparent 22%),radial-gradient(circle at 55% 18%,rgba(94,47,180,.42),transparent 35%),linear-gradient(135deg,#061429 0%,#102b62 52%,#171034 100%);color:#fff}.hero:before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,#000,transparent 76%)}
-    .hero-grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center;padding:82px 0 58px}.eyebrow{display:inline-flex;gap:9px;align-items:center;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.14);font-size:13px;font-weight:800;color:#ffe8d4}.hero h1{font-size:clamp(38px,6vw,74px);line-height:.98;margin:22px 0 18px;letter-spacing:-.055em}.hero p.lead{font-size:clamp(18px,2.2vw,23px);color:#dbe8ff;max-width:720px;margin:0 0 30px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.hero-proof{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:34px}.proof{padding:16px;border-radius:18px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12)}.proof b{display:block;color:#fff;font-size:15px}.proof span{display:block;color:#bdd1ee;font-size:12px;margin-top:5px}.hero-card{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.16);box-shadow:var(--shadow);border-radius:34px;padding:26px;backdrop-filter:blur(10px)}.network{height:430px;border-radius:25px;background:linear-gradient(145deg,rgba(255,255,255,.13),rgba(255,255,255,.05));position:relative;overflow:hidden;border:1px solid rgba(255,255,255,.14)}.node{position:absolute;border-radius:18px;background:#fff;color:var(--navy);padding:13px 15px;box-shadow:0 16px 40px rgba(0,0,0,.22);font-weight:900}.node small{display:block;font-weight:700;color:#697893;margin-top:2px}.n1{left:28px;top:34px}.n2{right:28px;top:72px}.n3{left:66px;bottom:82px}.n4{right:42px;bottom:44px;background:var(--peach)}.pulse{position:absolute;left:50%;top:50%;width:160px;height:160px;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(circle,var(--orange) 0 20%,rgba(255,122,26,.2) 21% 46%,rgba(255,255,255,.08) 47%);box-shadow:0 0 0 22px rgba(255,122,26,.08)}.line{position:absolute;height:2px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.55),transparent);transform-origin:left center}.l1{left:120px;top:110px;width:240px;transform:rotate(8deg)}.l2{left:150px;bottom:155px;width:245px;transform:rotate(-18deg)}.l3{right:132px;top:175px;width:200px;transform:rotate(70deg)}
-    .draft-ribbon{background:#fff8ed;border-bottom:1px solid #ffd7a8;color:#8f4300;font-weight:800;font-size:14px}.draft-ribbon .wrap{padding:10px 0;display:flex;gap:10px;align-items:center;justify-content:center;text-align:center}
-    section{padding:82px 0}.section-title{display:flex;align-items:end;justify-content:space-between;gap:28px;margin-bottom:34px}.section-title h2{font-size:clamp(30px,4.4vw,50px);line-height:1.04;margin:0;letter-spacing:-.04em;color:var(--navy)}.section-title p{max-width:520px;color:var(--muted);margin:0;font-size:17px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;box-shadow:0 18px 48px rgba(18,39,76,.07)}.card h3{margin:0 0 9px;font-size:20px;color:var(--navy)}.card p{margin:0;color:var(--muted)}.icon{width:46px;height:46px;border-radius:16px;display:grid;place-items:center;background:linear-gradient(135deg,var(--peach),#fff);color:var(--orange);font-size:23px;margin-bottom:18px}.soft{background:var(--soft)}.dark{background:linear-gradient(135deg,var(--navy),#102b62);color:#fff}.dark .section-title h2,.dark h3{color:#fff}.dark .section-title p,.dark p{color:#c7d6ed}.dark .card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.12);box-shadow:none}.journey{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;counter-reset:step}.step{position:relative;padding:22px;border-radius:22px;background:#fff;border:1px solid var(--line)}.step:before{counter-increment:step;content:"0" counter(step);display:inline-flex;background:var(--navy);color:#fff;border-radius:999px;padding:5px 10px;font-size:12px;font-weight:900;margin-bottom:16px}.step h3{margin:0 0 8px;font-size:17px}.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:start}.panel{background:#fff;border:1px solid var(--line);border-radius:30px;padding:28px;box-shadow:0 18px 48px rgba(18,39,76,.07)}.list{display:grid;gap:13px;margin:0;padding:0;list-style:none}.list li{display:grid;grid-template-columns:28px 1fr;gap:10px;color:#334761}.list li:before{content:"✓";width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:#eaf9f3;color:var(--green);font-weight:900}.sitemap{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.page-card{padding:18px;border-radius:20px;background:#fff;border:1px solid var(--line)}.page-card b{display:block;color:var(--navy)}.page-card span{display:block;color:var(--muted);font-size:14px;margin-top:4px}.tokens{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.token{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:#fff}.swatch{height:68px}.token span{display:block;padding:10px 12px;font-weight:800;font-size:12px;color:#334761}.home-flow{display:grid;gap:13px}.flow-item{display:grid;grid-template-columns:170px 1fr;gap:16px;padding:16px;border-radius:20px;background:#fff;border:1px solid var(--line)}.flow-item b{color:var(--orange)}.flow-item p{margin:0;color:var(--muted)}.cta{padding:54px;border-radius:36px;background:radial-gradient(circle at 80% 10%,rgba(255,122,26,.28),transparent 28%),linear-gradient(135deg,var(--navy),#102e68);color:#fff;display:grid;grid-template-columns:1.2fr auto;gap:24px;align-items:center}.cta h2{margin:0 0 10px;font-size:38px;letter-spacing:-.04em}.cta p{margin:0;color:#d9e6f7}.cta-actions{display:flex;flex-direction:column;gap:12px;min-width:310px}.footer{padding:38px 0;background:#061429;color:#9db0ce}.footer .wrap{display:flex;justify-content:space-between;gap:24px;align-items:center}.tag{display:inline-flex;padding:6px 10px;border-radius:999px;font-size:12px;font-weight:900;background:#eef4ff;color:#214b8f;margin:3px}.dark .tag{background:rgba(255,255,255,.11);color:#dfeaff}.matrix{width:100%;border-collapse:separate;border-spacing:0;overflow:hidden;border:1px solid var(--line);border-radius:22px;background:#fff}.matrix th,.matrix td{text-align:left;padding:15px;border-bottom:1px solid var(--line);vertical-align:top}.matrix th{background:#f2f6fb;color:var(--navy);font-size:13px}.matrix tr:last-child td{border-bottom:0}.matrix td{color:#40536d;font-size:14px}.mobile-only{display:none}
-    @media (max-width: 980px){.menu{display:none}.hero-grid,.split,.cta{grid-template-columns:1fr}.hero-card{order:-1}.cards{grid-template-columns:1fr 1fr}.journey{grid-template-columns:1fr 1fr}.tokens{grid-template-columns:1fr 1fr}.sitemap{grid-template-columns:1fr}.hero-proof{grid-template-columns:1fr}.flow-item{grid-template-columns:1fr}.cta-actions{min-width:0}.footer .wrap{flex-direction:column;align-items:flex-start}}
-    @media (max-width: 620px){.wrap{width:min(100% - 28px,var(--max))}.cards,.journey{grid-template-columns:1fr}.section-title{display:block}.hero-grid{padding:54px 0 42px}.network{height:330px}.node{font-size:12px;padding:10px}.section-title p{margin-top:14px}.cta{padding:32px}.cta h2{font-size:30px}.tokens{grid-template-columns:1fr}.matrix{display:block;overflow-x:auto}.draft-ribbon .wrap{font-size:12px}}
-  </style>
-</head>
-<body>
-  <div class="draft-ribbon"><div class="wrap">⚠️ Rascunho navegável para aprovação interna — não substitui o WordPress atual, não publica campanha e não altera domínios da ZICTEC.</div></div>
-  <header class="topbar">
-    <nav class="nav wrap">
-      <a class="brand" href="#top" aria-label="ZICTEC"><img src="assets/zictec-logo.png" alt="ZICTEC" onerror="this.style.display='none';this.nextElementSibling.style.display='block';this.nextElementSibling.nextElementSibling.style.display='inline-block'"><span class="brand-mark" style="display:none"></span><span class="brand-text" style="display:none">ZICTEC</span></a>
-      <div class="menu">
-        <a href="#proposta">Proposta</a><a href="#solucoes">Soluções</a><a href="#home">Home</a><a href="#sitemap">Sitemap</a><a href="#visual">Visual</a>
-      </div>
-      <a class="btn ghost" href="#cta">Avaliar rascunho</a>
-    </nav>
-  </header>
-  <main id="top">
-    <section class="hero">
-      <div class="hero-grid wrap">
-        <div>
-          <span class="eyebrow">Novo site institucional/comercial • proposta v0.1</span>
-          <h1>Consultoria técnica e regulatória para operadoras de telecom.</h1>
-          <p class="lead">Uma narrativa mais clara para posicionar a ZICTEC em voz, STFC, SIP, SBC, STIR/SHAKEN, Origem Verificada, Anatel e operação assistida — sem prometer o que depende de homologação técnica.</p>
-          <div class="hero-actions"><a class="btn primary" href="#home">Ver estrutura da home</a><a class="btn secondary" href="#sitemap">Ver mapa do site</a></div>
-          <div class="hero-proof">
-            <div class="proof"><b>Base técnica real</b><span>conteúdo antigo reaproveitado com linguagem atual</span></div>
-            <div class="proof"><b>Visual moderno</b><span>derivado do novo site, loja e campanha Chamada Verificada</span></div>
-            <div class="proof"><b>Draft-first</b><span>GitHub Pages antes de mexer no WordPress</span></div>
-          </div>
-        </div>
-        <aside class="hero-card" aria-label="Mapa visual de ecossistema telecom">
-          <div class="network">
-            <div class="pulse"></div><div class="line l1"></div><div class="line l2"></div><div class="line l3"></div>
-            <div class="node n1">Operadora<small>STFC • VoIP • SIP</small></div>
-            <div class="node n2">Borda SBC<small>ProSBC • Telcobridges</small></div>
-            <div class="node n3">Regulatório<small>Anatel • DETRAF • QEML</small></div>
-            <div class="node n4">Confiança<small>STIR/SHAKEN • Origem</small></div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section id="proposta">
-      <div class="wrap">
-        <div class="section-title"><h2>Narrativa proposta</h2><p>Transformar o site em uma frente comercial consultiva, com prova técnica e caminhos claros para diagnóstico, solução e contato.</p></div>
-        <div class="cards">
-          <article class="card"><div class="icon">◎</div><h3>Posicionamento central</h3><p>A ZICTEC como parceira técnica para operadoras que precisam manter voz, interconexão e obrigações regulatórias funcionando com previsibilidade.</p></article>
-          <article class="card"><div class="icon">⚙</div><h3>Foco operacional</h3><p>Menos discurso genérico de tecnologia; mais operação real: SIP, SBC, STFC, relatórios, Anatel, autenticação de chamadas e suporte contínuo.</p></article>
-          <article class="card"><div class="icon">↗</div><h3>Conversão B2B</h3><p>CTAs para diagnóstico técnico, reunião com especialista, landing de Chamada Verificada e loja quando houver oferta empacotada.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="solucoes" class="soft">
-      <div class="wrap">
-        <div class="section-title"><h2>Soluções principais</h2><p>Pacotes de conteúdo para home e páginas internas, mantendo nomes técnicos consistentes.</p></div>
-        <div class="cards">
-          <article class="card"><div class="icon">☎</div><h3>Origem Verificada / STIR-SHAKEN</h3><p>Autenticação como base técnica; identificação de marca/campanha como camada posterior, sujeita a credenciais, rotas e homologação.</p></article>
-          <article class="card"><div class="icon">▣</div><h3>STFC Tools</h3><p>Ferramentas para operação, evidências, relatórios, controle e rotinas que reduzem esforço manual da operadora.</p></article>
-          <article class="card"><div class="icon">◈</div><h3>SBC / ProSBC / Telcobridges</h3><p>Projeto, implantação, suporte, borda SIP, interconexão, segurança de tráfego e operação assistida.</p></article>
-          <article class="card"><div class="icon">§</div><h3>Gestão regulatória Anatel</h3><p>Coleta de dados, obrigações periódicas, organização de evidências, relatórios e apoio técnico-regulatório.</p></article>
-          <article class="card"><div class="icon">⇄</div><h3>DETRAF, QEML e interconexões</h3><p>Tratamento técnico/comercial de tráfego, qualidade, rotas, indicadores, divergências e documentação.</p></article>
-          <article class="card"><div class="icon">✦</div><h3>Suporte técnico especializado</h3><p>Banco de horas, sustentação, troubleshooting, RCA curto com logs/testes e apoio à operação de voz.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="dark">
-      <div class="wrap">
-        <div class="section-title"><h2>Como a ZICTEC atua</h2><p>Um processo simples, mas crível para operadoras: diagnóstico primeiro, implantação depois, sustentação contínua quando fizer sentido.</p></div>
-        <div class="journey">
-          <div class="step"><h3>Diagnóstico</h3><p>Entendimento da operação, rotas, SBC, obrigações e dores comerciais.</p></div>
-          <div class="step"><h3>Projeto técnico</h3><p>Desenho de arquitetura, entregáveis, riscos, pré-requisitos e fases.</p></div>
-          <div class="step"><h3>Implantação</h3><p>Configuração, testes, integração e validação com evidências.</p></div>
-          <div class="step"><h3>Operação assistida</h3><p>Apoio nas primeiras rotinas, ajustes e governança técnica.</p></div>
-          <div class="step"><h3>Suporte contínuo</h3><p>Banco de horas, sustentação e evolução conforme necessidade.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="home">
-      <div class="wrap split">
-        <div>
-          <div class="section-title" style="display:block"><h2>Home proposta, seção por seção</h2><p style="margin-top:16px">A home deve funcionar como uma página comercial completa, não apenas uma vitrine institucional.</p></div>
-          <ul class="list">
-            <li>Remover métricas “+0” e depoimentos genéricos até termos prova validada.</li>
-            <li>Usar CTAs consistentes: diagnóstico, reunião e soluções.</li>
-            <li>Conectar explicitamente com loja, Chamada Verificada e suporte.</li>
-            <li>Tratar STIR/SHAKEN, autenticação e Origem Verificada sem confusão conceitual.</li>
-          </ul>
-        </div>
-        <div class="panel home-flow">
-          <div class="flow-item"><b>01 Hero</b><p>Headline consultiva, subheadline técnica e CTAs para diagnóstico/reunião.</p></div>
-          <div class="flow-item"><b>02 Dores</b><p>Chamadas bloqueadas, risco regulatório, instabilidade SIP, DETRAF/QEML, falta de equipe especializada.</p></div>
-          <div class="flow-item"><b>03 Soluções</b><p>Cards por frente comercial com links para páginas internas.</p></div>
-          <div class="flow-item"><b>04 Método</b><p>Diagnóstico → projeto → implantação → operação assistida → suporte.</p></div>
-          <div class="flow-item"><b>05 Prova técnica</b><p>Ecossistema, experiência, tecnologias e materiais validados; sem número inventado.</p></div>
-          <div class="flow-item"><b>06 Chamada Verificada</b><p>Bloco dedicado apontando para a landing e explicando camadas corretamente.</p></div>
-          <div class="flow-item"><b>07 CTA final</b><p>Solicitar diagnóstico da operação de voz / falar com especialista.</p></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="sitemap" class="soft">
-      <div class="wrap">
-        <div class="section-title"><h2>Mapa do site v0.1</h2><p>Primeiro pacote de páginas para transformar o site em uma base comercial versionada.</p></div>
-        <div class="sitemap">
-          <div class="page-card"><b>Home</b><span>Visão comercial completa e atalhos para todas as frentes.</span></div>
-          <div class="page-card"><b>Quem somos</b><span>História, equipe técnica, atuação com operadoras e diferenciais.</span></div>
-          <div class="page-card"><b>Soluções</b><span>Hub de ofertas: regulatório, voz, SBC, STFC Tools, suporte e interconexão.</span></div>
-          <div class="page-card"><b>Segmentos</b><span>Operadoras STFC/VoIP, provedores, empresas com operação crítica de voz.</span></div>
-          <div class="page-card"><b>Origem Verificada / STIR-SHAKEN</b><span>Página técnica-comercial conectada à landing dedicada.</span></div>
-          <div class="page-card"><b>STFC Tools</b><span>Automação, relatórios, evidências e rotinas operacionais.</span></div>
-          <div class="page-card"><b>SBC / ProSBC / Telcobridges</b><span>Arquitetura, implantação, suporte e segurança SIP.</span></div>
-          <div class="page-card"><b>Gestão Regulatória Anatel</b><span>Obrigações, coleta de dados, documentação e apoio contínuo.</span></div>
-          <div class="page-card"><b>Suporte Técnico</b><span>Banco de horas, sustentação e troubleshooting com RCA.</span></div>
-          <div class="page-card"><b>Contato</b><span>Calendly, WhatsApp, email, endereço e caminhos para loja/suporte.</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="visual">
-      <div class="wrap">
-        <div class="section-title"><h2>Padrão visual sugerido</h2><p>Direção inspirada no novo site, loja e campanha visual recente: escuro premium, laranja como ação, cards claros para explicação técnica.</p></div>
-        <div class="tokens">
-          <div class="token"><div class="swatch" style="background:#071831"></div><span>Navy técnico</span></div>
-          <div class="token"><div class="swatch" style="background:#154b9b"></div><span>Azul ZICTEC</span></div>
-          <div class="token"><div class="swatch" style="background:#5e2fb4"></div><span>Roxo telecom</span></div>
-          <div class="token"><div class="swatch" style="background:#ff7a1a"></div><span>Laranja CTA</span></div>
-          <div class="token"><div class="swatch" style="background:#f5f8fc"></div><span>Fundo técnico</span></div>
-        </div>
-        <div style="height:26px"></div>
-        <table class="matrix" aria-label="Matriz de conteúdo visual">
-          <thead><tr><th>Tipo</th><th>Uso</th><th>Observação</th></tr></thead>
-          <tbody>
-            <tr><td><b>Hero escuro</b></td><td>Autoridade, profundidade técnica e primeira dobra</td><td>Usar em home e páginas estratégicas.</td></tr>
-            <tr><td><b>Cards claros</b></td><td>Explicar dores/soluções sem cansar leitura</td><td>Combinar ícones simples com texto objetivo.</td></tr>
-            <tr><td><b>Blocos peach/laranja</b></td><td>CTA, oferta, chamada para diagnóstico</td><td>Laranja sempre associado à ação.</td></tr>
-            <tr><td><b>Diagramas técnicos</b></td><td>SIP, SBC, interconexão, STIR/SHAKEN</td><td>Favorecer credibilidade para decisores técnicos.</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    <section class="dark">
-      <div class="wrap split">
-        <div>
-          <div class="section-title" style="display:block"><h2>O que reaproveitar / descartar</h2><p style="margin-top:16px">Critério para migração posterior ao WordPress.</p></div>
-        </div>
-        <div class="cards" style="grid-template-columns:1fr 1fr">
-          <article class="card"><h3>Reaproveitar</h3><p>Conteúdo técnico do site atual, estrutura visual do novo site, identidade da loja, ativos de Chamada Verificada e CTAs de diagnóstico.</p></article>
-          <article class="card"><h3>Descartar ou reescrever</h3><p>Métricas zeradas, depoimentos sem fonte, textos genéricos, links “#”, promessas automáticas de branded call e menus longos demais.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="cta">
-      <div class="wrap">
-        <div class="cta">
-          <div><h2>Próxima etapa sugerida</h2><p>Transformar este rascunho em protótipo de home real com copy final, blocos responsivos e páginas internas prioritárias antes de qualquer alteração no WordPress.</p></div>
-          <div class="cta-actions"><a class="btn primary" href="https://www.chamadaverificada.com.br/" target="_blank" rel="noopener">Ver landing Chamada Verificada</a><a class="btn secondary" href="https://shop.zictec.com.br/" target="_blank" rel="noopener">Ver loja ZICTEC</a><a class="btn secondary" href="https://www.calendly.com/zictec/reuniao" target="_blank" rel="noopener">Agendar diagnóstico</a></div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer class="footer"><div class="wrap"><div><b>ZICTEC — rascunho de novo site</b><br>Gerado pela Mira em modo draft-first/aprovação.</div><div>Versão v0.1 • GitHub Pages</div></div></footer>
-</body>
-</html>
+  <link rel="stylesheet" href="styles.css">
+</head><body>
+  <div class="draft-ribbon"><div class="wrap">⚠️ Rascunho navegável multipágina para aprovação interna — não altera WordPress/domínios oficiais.</div></div>
+  <header class="topbar"><nav class="nav wrap">
+    <a class="brand" href="index.html" aria-label="ZICTEC"><img src="assets/zictec-logo.png" alt="ZICTEC"></a>
+    <div class="menu"><a class="active" href="index.html">Home</a><a href="quem-somos.html">Quem somos</a><div class="drop"><a href="solucoes.html">Soluções ▾</a><div class="drop-panel"><a href="chamada-verificada.html">Origem Verificada / STIR-SHAKEN<small>Autenticação, identificação e jornada comercial</small></a><a href="stfc-tools.html">STFC Tools<small>APIs, evidências, relatórios e rotinas</small></a><a href="sbc-prosbc.html">SBC / ProSBC<small>Borda SIP, interconexão e segurança</small></a><a href="regulatorio-anatel.html">Regulatório Anatel<small>Obrigações, DETRAF, QEML e evidências</small></a><a href="suporte.html">Suporte técnico<small>Banco de horas, RCA e sustentação</small></a></div></div><a href="segmentos.html">Segmentos</a><a href="contato.html">Contato</a></div>
+    <a class="btn ghost" href="contato.html">Falar com especialista</a>
+  </nav></header><main><section class="hero"><div class="hero-grid wrap"><div><span class="eyebrow">Novo site ZICTEC • versão multipágina v0.2</span><h1>Consultoria técnica e regulatória para operações de voz mais seguras, estáveis e conformes.</h1><p class="lead">Consultoria, implantação e suporte especializado para operadoras de telecom que precisam tratar voz, interconexão, STFC, SIP, SBC, STIR/SHAKEN, Origem Verificada e obrigações Anatel com previsibilidade.</p><div class="hero-actions"><a class="btn primary" href="solucoes.html">Conhecer soluções</a><a class="btn secondary" href="contato.html">Falar com especialista</a></div><div class="hero-proof"><div class="proof"><b>Voz e STFC</b><span>operação, interconexão, rotas e evidências</span></div><div class="proof"><b>Regulatório Anatel</b><span>obrigações, QEML, DETRAF e processos</span></div><div class="proof"><b>Autenticação</b><span>STIR/SHAKEN e Origem Verificada sem promessas indevidas</span></div></div></div><aside class="hero-card"><div class="network"><div class="pulse"></div><div class="line l1"></div><div class="line l2"></div><div class="line l3"></div><div class="node n1">Operadora<small>STFC • VoIP • SIP</small></div><div class="node n2">Borda SBC<small>ProSBC • Telcobridges</small></div><div class="node n3">Regulatório<small>Anatel • DETRAF • QEML</small></div><div class="node n4">Confiança<small>STIR/SHAKEN • Origem</small></div></div></aside></div></section>
+<section><div class="wrap"><div class="section-title"><h2>Operar redes de voz exige mais do que infraestrutura.</h2><p>O novo site deixa claro onde a ZICTEC atua: na interseção entre engenharia, regulação e operação assistida.</p></div><div class="cards">
+<article class="card"><div class="icon">§</div><h3>Exigências regulatórias complexas</h3><p>Regras, prazos, relatórios, evidências e atualizações exigem acompanhamento constante para evitar retrabalho e risco operacional.</p></article>
+<article class="card"><div class="icon">⇄</div><h3>Interconexão e tráfego de voz</h3><p>Rotas, DETRAF, qualidade, bilhetagem, portabilidade e divergências técnicas precisam de leitura operacional e documentação.</p></article>
+<article class="card"><div class="icon">◈</div><h3>SIP, SBC e estabilidade</h3><p>Falhas de borda, SDP, NAT, codecs, segurança e roteamento impactam diretamente atendimento, faturamento e reputação.</p></article>
+</div></div></section>
+<section class="soft"><div class="wrap"><div class="section-title"><h2>Soluções com páginas próprias.</h2><p>O header agora aponta para páginas separadas, permitindo submenus e expansão sem transformar a home em um HTML gigante.</p></div><div class="page-list">
+<a class="page-card" href="chamada-verificada.html"><b>Origem Verificada / STIR-SHAKEN</b><span>Autenticação, identificação e jornada comercial</span></a><a class="page-card" href="stfc-tools.html"><b>STFC Tools</b><span>APIs, evidências, relatórios e rotinas</span></a><a class="page-card" href="sbc-prosbc.html"><b>SBC / ProSBC</b><span>Borda SIP, interconexão e segurança</span></a><a class="page-card" href="regulatorio-anatel.html"><b>Regulatório Anatel</b><span>Obrigações, DETRAF, QEML e evidências</span></a><a class="page-card" href="suporte.html"><b>Suporte técnico</b><span>Banco de horas, RCA e sustentação</span></a>
+</div></div></section>
+<section class="dark"><div class="wrap"><div class="section-title"><h2>Método de atuação</h2><p>Diagnóstico primeiro, escopo claro, implantação com validação e sustentação quando fizer sentido.</p></div><div class="journey"><div class="step"><h3>Diagnóstico</h3><p>Leitura da operação, rotas, SBC, obrigações e riscos.</p></div><div class="step"><h3>Projeto</h3><p>Arquitetura, entregáveis, pré-requisitos e fases.</p></div><div class="step"><h3>Implantação</h3><p>Configuração, integração, testes e evidências.</p></div><div class="step"><h3>Operação assistida</h3><p>Acompanhamento das primeiras rotinas e ajustes.</p></div><div class="step"><h3>Suporte</h3><p>Banco de horas, troubleshooting e evolução.</p></div></div></div></section>
+<section><div class="wrap"><div class="cta"><div><h2>Vamos avaliar sua operação de voz?</h2><p>A próxima conversa pode começar por diagnóstico técnico, priorização regulatória ou uma frente específica como Origem Verificada, STFC Tools ou SBC.</p></div><div class="cta-actions"><a class="btn secondary" href="https://www.calendly.com/zictec/reuniao" target="_blank" rel="noopener">Agendar diagnóstico</a><a class="btn secondary" href="https://www.chamadaverificada.com.br/" target="_blank" rel="noopener">Landing Chamada Verificada</a><a class="btn secondary" href="https://shop.zictec.com.br/" target="_blank" rel="noopener">Loja ZICTEC</a></div></div></div></section></main><footer class="footer"><div class="wrap"><div><b>ZICTEC — novo site institucional</b><br>Protótipo multipágina gerado pela Mira em modo draft-first/aprovação.</div><div>v0.2 • GitHub Pages • conteúdo real em expansão</div></div></footer></body></html>
