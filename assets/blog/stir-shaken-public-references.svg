@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="720" viewBox="0 0 1400 720" role="img" aria-labelledby="title desc">
+  <title id="title">Referências públicas para autenticação e identificação de chamadas</title>
+  <desc id="desc">Mapa visual conectando Anatel, Origem Verificada, ABR Telecom, STIR/SHAKEN e Rich Call Data em uma jornada de confiança em chamadas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#061429"/>
+      <stop offset="0.55" stop-color="#102b62"/>
+      <stop offset="1" stop-color="#171034"/>
+    </linearGradient>
+    <linearGradient id="orange" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ff9f43"/>
+      <stop offset="1" stop-color="#ff5c21"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="24" stdDeviation="24" flood-color="#000" flood-opacity="0.35"/>
+    </filter>
+    <pattern id="grid" width="46" height="46" patternUnits="userSpaceOnUse">
+      <path d="M46 0H0V46" fill="none" stroke="#ffffff" stroke-opacity="0.055"/>
+    </pattern>
+  </defs>
+  <rect width="1400" height="720" rx="38" fill="url(#bg)"/>
+  <rect width="1400" height="720" rx="38" fill="url(#grid)"/>
+  <circle cx="1140" cy="120" r="220" fill="#5e2fb4" opacity="0.22"/>
+  <circle cx="205" cy="615" r="260" fill="#ff7a1a" opacity="0.16"/>
+
+  <text x="70" y="86" fill="#ffe8d4" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="2">REFERÊNCIAS PÚBLICAS</text>
+  <text x="70" y="136" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="900">Da regra técnica à experiência visível</text>
+  <text x="70" y="178" fill="#c7d6ed" font-family="Inter, Arial, sans-serif" font-size="24">Autenticação, identificação enriquecida e Origem Verificada são camadas conectadas — não atalhos automáticos.</text>
+
+  <g stroke="#ffffff" stroke-opacity="0.28" stroke-width="3" fill="none">
+    <path d="M250 375 C390 260 514 260 650 375"/>
+    <path d="M650 375 C790 490 920 490 1070 375"/>
+    <path d="M650 375 L650 545"/>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="80" y="260" width="340" height="190" rx="28" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.22)"/>
+    <circle cx="130" cy="314" r="24" fill="url(#orange)"/>
+    <text x="165" y="307" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900">Anatel</text>
+    <text x="165" y="342" fill="#d9e5f7" font-family="Inter, Arial, sans-serif" font-size="18">Referência regulatória</text>
+    <text x="110" y="390" fill="#c7d6ed" font-family="Inter, Arial, sans-serif" font-size="20">Autenticação e identificação de chamadas, com separação entre sinalização e conteúdo da conversa.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="530" y="270" width="300" height="170" rx="28" fill="rgba(255,255,255,0.14)" stroke="rgba(255,122,26,0.50)"/>
+    <text x="568" y="326" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="900">STIR/SHAKEN</text>
+    <text x="568" y="364" fill="#d9e5f7" font-family="Inter, Arial, sans-serif" font-size="19">Base técnica de confiança</text>
+    <text x="568" y="404" fill="#c7d6ed" font-family="Inter, Arial, sans-serif" font-size="19">Assinatura, verificação e governança para identidade de chamadas.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="960" y="260" width="360" height="190" rx="28" fill="rgba(255,255,255,0.12)" stroke="rgba(255,255,255,0.22)"/>
+    <circle cx="1010" cy="314" r="24" fill="#17a36b"/>
+    <text x="1045" y="307" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="900">Origem Verificada</text>
+    <text x="1045" y="342" fill="#d9e5f7" font-family="Inter, Arial, sans-serif" font-size="18">Identificação de marca</text>
+    <text x="990" y="390" fill="#c7d6ed" font-family="Inter, Arial, sans-serif" font-size="20">Nome, logotipo e motivo da chamada quando houver suporte, cadastro, aceite e regras aplicáveis.</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="482" y="520" width="382" height="110" rx="26" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.18)"/>
+    <text x="520" y="568" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="900">RCD / dados enriquecidos</text>
+    <text x="520" y="602" fill="#c7d6ed" font-family="Inter, Arial, sans-serif" font-size="19">Camada visual: nome, imagem/logotipo e motivo da chamada.</text>
+  </g>
+
+  <g>
+    <rect x="90" y="610" width="190" height="42" rx="21" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.18)"/>
+    <text x="124" y="638" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800">gov.br/anatel</text>
+    <rect x="300" y="610" width="250" height="42" rx="21" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.18)"/>
+    <text x="326" y="638" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800">origemverificada.com.br</text>
+    <rect x="570" y="610" width="210" height="42" rx="21" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.18)"/>
+    <text x="621" y="638" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800">ABR Telecom</text>
+    <rect x="800" y="610" width="160" height="42" rx="21" fill="rgba(255,255,255,0.10)" stroke="rgba(255,255,255,0.18)"/>
+    <text x="850" y="638" fill="#ffffff" font-family="Inter, Arial, sans-serif" font-size="17" font-weight="800">IETF</text>
+  </g>
+</svg>
