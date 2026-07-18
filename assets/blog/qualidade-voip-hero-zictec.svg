@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07152b"/><stop offset="0.55" stop-color="#101c46"/><stop offset="1" stop-color="#261339"/></linearGradient><linearGradient id="or" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff7a1a"/><stop offset="1" stop-color="#ffb36b"/></linearGradient></defs>
+<rect width="1200" height="675" fill="url(#bg)"/>
+<path d="M760 -60 L1260 180 L1020 735 L520 600 Z" fill="#ff7a1a" opacity="0.10"/>
+<circle cx="1030" cy="120" r="190" fill="#ffffff" opacity="0.04"/>
+<text x="70" y="85" font-family="Inter,Arial" font-size="28" fill="#ffb36b" font-weight="800">ZICTEC • Voz IP / SBC / Qualidade</text>
+<text x="70" y="155" font-family="Inter,Arial" font-size="56" fill="#fff" font-weight="900">Qualidade de chamadas VoIP</text>
+<text x="70" y="205" font-family="Inter,Arial" font-size="25" fill="#dbe7ff">Como separar perda, jitter, latência, codec e eco antes de</text>
+<text x="70" y="239" font-family="Inter,Arial" font-size="25" fill="#dbe7ff">culpar a rota ou trocar parâmetros no escuro.</text>
+<rect x="70" y="330" rx="22" ry="22" width="300" height="118" fill="#0f2445" stroke="#274d82" stroke-width="2"/>
+<circle cx="104" cy="368" r="18" fill="url(#or)"/><text x="99" y="375" font-family="Inter,Arial" font-size="20" font-weight="900" fill="#09152b">1</text>
+<text x="134" y="374" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#fff">Perda</text>
+<text x="98" y="404" font-family="Inter,Arial" font-size="18" fill="#b8c8e8">RTP não chega ou chega tarde</text>
+<text x="98" y="428" font-family="Inter,Arial" font-size="18" fill="#b8c8e8">demais</text>
+<rect x="410" y="330" rx="22" ry="22" width="300" height="118" fill="#0f2445" stroke="#274d82" stroke-width="2"/>
+<circle cx="444" cy="368" r="18" fill="url(#or)"/><text x="439" y="375" font-family="Inter,Arial" font-size="20" font-weight="900" fill="#09152b">2</text>
+<text x="474" y="374" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#fff">Jitter</text>
+<text x="438" y="404" font-family="Inter,Arial" font-size="18" fill="#b8c8e8">Pacotes chegam fora da cadência</text>
+<rect x="750" y="330" rx="22" ry="22" width="300" height="118" fill="#0f2445" stroke="#274d82" stroke-width="2"/>
+<circle cx="784" cy="368" r="18" fill="url(#or)"/><text x="779" y="375" font-family="Inter,Arial" font-size="20" font-weight="900" fill="#09152b">3</text>
+<text x="814" y="374" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#fff">Latência</text>
+<text x="778" y="404" font-family="Inter,Arial" font-size="18" fill="#b8c8e8">A conversa fica fora de</text>
+<text x="778" y="428" font-family="Inter,Arial" font-size="18" fill="#b8c8e8">sincronia</text>
+<rect x="240" y="480" rx="22" ry="22" width="300" height="118" fill="#0f2445" stroke="#274d82" stroke-width="2"/>
+<circle cx="274" cy="518" r="18" fill="url(#or)"/><text x="269" y="525" font-family="Inter,Arial" font-size="20" font-weight="900" fill="#09152b">4</text>
+<text x="304" y="524" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#fff">Codec</text>
+<text x="268" y="554" font-family="Inter,Arial" font-size="18" fill="#b8c8e8">Transcodificação degrada a voz</text>
+<rect x="580" y="480" rx="22" ry="22" width="300" height="118" fill="#0f2445" stroke="#274d82" stroke-width="2"/>
+<circle cx="614" cy="518" r="18" fill="url(#or)"/><text x="609" y="525" font-family="Inter,Arial" font-size="20" font-weight="900" fill="#09152b">5</text>
+<text x="644" y="524" font-family="Inter,Arial" font-size="24" font-weight="800" fill="#fff">Eco</text>
+<text x="608" y="554" font-family="Inter,Arial" font-size="18" fill="#b8c8e8">A própria voz retorna com atraso</text>
+<text x="70" y="635" font-family="Inter,Arial" font-size="22" fill="#ffb36b" font-weight="700">Diagnóstico com CDR, RTCP, SIP trace e PCAP no SBC</text>
+</svg>
