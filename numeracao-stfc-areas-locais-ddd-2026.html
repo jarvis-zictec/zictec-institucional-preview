@@ -1,0 +1,385 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Numeração STFC em 2026: Áreas Locais por DDD e impactos para operadoras</title><meta name="description" content="Entenda como as Áreas Locais do STFC passaram a coincidir com os DDDs em 2026 e o que revisar em roteamento, bilhetagem e cadastros."/></head><body>
+<style>
+:root{--navy:#071831;--navy2:#102d61;--orange:#ff7a1a;--ink:#14233c;--muted:#52627a;--line:#dbe4f0;--paper:#fff;--soft:#f4f8fd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;line-height:1.75}.topbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(18px);border-bottom:1px solid rgba(219,228,240,.9)}.topbar .wrap{width:min(1120px,calc(100% - 40px));margin:auto}.topbar .nav{height:66px;min-height:66px;display:flex;align-items:center;justify-content:space-between;gap:18px}.topbar .brand{display:flex;align-items:center;gap:14px;text-decoration:none}.topbar .brand img{height:34px;width:auto;max-width:128px;object-fit:contain;display:block}.topbar .menu{display:flex;gap:2px;align-items:center;font-weight:750;font-size:13px;color:#263a5d}.topbar .menu>a,.topbar .drop>a{padding:9px 10px;border-radius:999px;text-decoration:none;display:inline-flex;gap:6px;align-items:center;color:#263a5d}.topbar .menu a:hover,.topbar .menu a.active{color:var(--orange);background:#fff3e8}.topbar .drop{position:relative}.topbar .drop-panel{position:absolute;top:44px;left:0;width:330px;background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:0 22px 60px rgba(7,24,49,.18);padding:10px;display:none}.topbar .drop:hover .drop-panel{display:grid}.topbar .drop-panel a{padding:12px 13px;text-decoration:none;border-radius:14px;color:#263a5d;display:block}.topbar .drop-panel a:hover{background:var(--soft);color:var(--orange)}.topbar .drop-panel small{display:block;color:var(--muted);font-weight:600;margin-top:2px}.topbar .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:9px 14px;border-radius:999px;border:1px solid #d8e2ef;text-decoration:none;font-weight:850;font-size:13px;line-height:1.15;white-space:nowrap;background:#fff;color:#142849;box-shadow:0 8px 22px rgba(7,24,49,.05)}.hero{background:linear-gradient(135deg,var(--navy),#132f63);color:#fff;padding:74px 20px 84px}.hero-inner{width:min(1080px,100%);margin:auto}.eyebrow{display:inline-block;color:#ffb067;font-size:14px;letter-spacing:.11em;font-weight:800;text-transform:uppercase;margin-bottom:16px}.hero h1{font-size:clamp(38px,6vw,68px);line-height:1.06;letter-spacing:-.035em;max-width:1020px;margin:0}.hero p{max-width:850px;font-size:21px;color:#d3deef;margin:24px 0 0}.meta{display:flex;gap:18px;flex-wrap:wrap;margin-top:26px;color:#9fb4d4;font-size:14px}.content-wrap{width:min(920px,calc(100% - 40px));margin:0 auto;padding:66px 0 90px}.article>p:first-child{font-size:21px;color:#273a56}.article h2{font-size:34px;line-height:1.2;letter-spacing:-.02em;color:var(--navy);margin:64px 0 18px;padding-top:8px}.article h3{font-size:25px;line-height:1.3;color:#17345f;margin:42px 0 14px}.article p,.article li{font-size:18px}.article ul,.article ol{padding-left:27px}.article li{margin:7px 0}.article a{color:#1359a6;overflow-wrap:anywhere}.article strong{color:#0a254d}.article blockquote{margin:30px 0;padding:22px 26px;background:#fff4ea;border-left:5px solid var(--orange);border-radius:0 12px 12px 0}.article-figure{margin:42px 0}.article-figure img{display:block;width:100%;height:auto;border-radius:18px;box-shadow:0 20px 55px rgba(7,24,49,.18)}.article-figure figcaption{font-size:14px;color:var(--muted);margin-top:12px;text-align:center}.article hr{border:0;border-top:1px solid var(--line);margin:54px 0}.article h2[id="em-resumo"]+ul{background:var(--soft);border:1px solid var(--line);border-radius:18px;padding:25px 30px 25px 52px}.cta-box{margin-top:58px;background:var(--navy);color:#fff;padding:34px;border-radius:18px}.cta-box h2{color:#fff;margin:0 0 10px}.cta-box p{color:#c8d6ea}.cta-box a{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;padding:13px 20px;border-radius:8px}.footer{background:#061429;color:#c7d6ed;padding:28px 0;font-size:14px;line-height:1.58;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif}.footer .wrap{width:min(1120px,calc(100% - 40px));margin:auto;display:flex;justify-content:space-between;gap:22px;align-items:flex-start}.footer b{color:#fff;font-size:16px}.footer div:last-child{text-align:right;max-width:360px}@media(max-width:760px){.topbar .menu{display:none}.topbar .wrap{width:calc(100% - 28px)}.footer .wrap{width:calc(100% - 28px);flex-direction:column}.footer div:last-child{text-align:left}.hero{padding-top:54px}.content-wrap{width:min(100% - 28px,920px)}.article h2{font-size:29px}.article p,.article li{font-size:17px}.header-inner{width:calc(100% - 28px)}}
+
+
+.hero p{color:#e3edf9}.hero .meta{color:#dbe7f7}.topbar .menu a.active{color:#9b3f00}.did-article{color:#243954;font-size:17px}.did-article>p,.did-article>ul,.did-article>ol,.did-article>blockquote{max-width:68ch}.did-article h2{text-wrap:balance}.did-article .lead{font-size:20px;color:#40536f}.did-article .summary{background:#eef5fc;border:1px solid #d8e5f2;border-left:5px solid var(--orange);padding:22px 26px;border-radius:16px;margin:28px 0}.did-article .summary ul{margin-bottom:0}.did-article blockquote{margin:28px 0;padding:20px 24px;border-left:5px solid var(--orange);background:#fff5ec;border-radius:0 14px 14px 0;font-size:20px;font-weight:750;color:#17345e}.did-article .risk-list li,.did-article .check-list li{margin-bottom:9px}.did-article .term-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:24px 0}.did-article .term-card{border:1px solid var(--line);background:var(--soft);border-radius:18px;padding:22px}.did-article .term-card h3{margin-top:0;color:var(--navy2)}.did-article .article-figure{margin:30px 0}.did-article .article-figure img{display:block;width:100%;height:auto;border-radius:18px}.did-article .article-figure figcaption{text-align:center;color:#243954;font-size:15px;margin-top:8px}.did-article .cta-box{margin:42px 0 12px;padding:30px;border-radius:22px;background:linear-gradient(135deg,#071831,#163c78);color:#fff}.did-article .cta-box h2{color:#fff;margin-top:0}.did-article .cta-box p{color:#e3ebf7}.did-article .cta-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.did-article .cta-actions a{display:inline-flex;align-items:center;justify-content:center;text-align:center;padding:12px 16px;border-radius:999px;background:var(--orange);color:#071831;text-decoration:none;font-weight:850}.did-article .cta-actions a.secondary{background:#fff;color:#102d61}.did-article .sources{font-size:14px}.did-article .sources li{margin-bottom:10px;word-break:break-word}.footer{color:#dbe6f5}.topbar .drop:focus-within .drop-panel{display:grid}@media(max-width:900px){.topbar .nav{height:auto;min-height:66px;padding:10px 0;flex-wrap:wrap}.topbar .menu{order:3;width:100%;justify-content:center;flex-wrap:wrap}.topbar .drop-panel{left:50%;transform:translateX(-50%);max-width:calc(100vw - 28px)}}@media(max-width:760px){.did-article .term-grid{grid-template-columns:1fr}.did-article .cta-box{padding:22px}.did-article .cta-actions{grid-template-columns:1fr}.did-article .cta-actions a{justify-content:center}}
+
+/* v3 editorial table and long-form readability */
+.did-article table{width:100%;border-collapse:separate;border-spacing:0;margin:26px 0 34px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(7,24,49,.05)}
+.did-article thead th{background:#eaf2fb;color:#102d61;text-align:left;font-weight:850;padding:15px 18px;border-bottom:1px solid #cbd9e8}
+.did-article tbody td{padding:15px 18px;vertical-align:top;border-bottom:1px solid #e1e9f2;text-align:left}
+.did-article tbody tr:nth-child(even) td{background:#f7faff}
+.did-article tbody tr:last-child td{border-bottom:0}
+.did-article th:first-child,.did-article td:first-child{width:36%;font-weight:750;color:#17345e}
+.did-article li{margin-bottom:7px}
+@media(max-width:720px){.did-article table,.did-article thead,.did-article tbody,.did-article tr,.did-article th,.did-article td{display:block;width:100%}.did-article thead{position:absolute;left:-10000px}.did-article tbody tr{padding:14px 16px;border-bottom:1px solid #dbe4f0}.did-article tbody tr:last-child{border-bottom:0}.did-article tbody td{padding:5px 0;border:0;background:transparent!important}.did-article tbody td:first-child{width:100%;font-weight:850}.did-article tbody td:last-child{color:#40536f}.did-article .cta-actions{grid-template-columns:1fr}.did-article .article-figure figcaption{font-size:14px}}
+</style>
+<style>
+.zictec-numbering-article .article>figure:first-child{max-width:620px;margin:0 auto 32px}.zictec-numbering-article .article>figure:first-child img{max-height:820px;object-fit:contain;background:#071831}.zictec-numbering-article .article table{display:block;overflow-x:auto;border-collapse:collapse;width:100%;margin:26px 0}.zictec-numbering-article .article th,.zictec-numbering-article .article td{border:1px solid #dbe4f0;padding:12px 14px;vertical-align:top;min-width:180px}.zictec-numbering-article .article th{background:#f4f8fd;color:#071831}.zictec-numbering-article .article pre{background:#071831;color:#fff;border-radius:14px;padding:16px 18px;overflow:auto}.zictec-numbering-article .article .task-list{list-style:none;padding-left:0}.zictec-numbering-article .article .task-list input{margin-right:9px}.zictec-numbering-article .article a{overflow-wrap:anywhere}@media(max-width:760px){.zictec-numbering-article .article th,.zictec-numbering-article .article td{min-width:220px}.zictec-numbering-article .article>figure:first-child{max-width:100%}}
+</style>
+<div class="zictec-regulatory-article zictec-numbering-article" data-marker="mira-numeracao-stfc-areas-locais-20260921"><header class="topbar"><nav class="nav wrap">
+<a aria-label="ZICTEC" class="brand" href="/"><img alt="ZICTEC" src="https://jarvis-zictec.github.io/zictec-institucional-preview/assets/zictec-logo.png"/></a>
+<div class="menu"><a href="/">Home</a><a href="/quem-somos/">Quem somos</a><div class="drop"><a href="/solucoes/">Soluções ▾</a><div class="drop-panel"><a href="/chamada-verificada/">Origem Verificada / STIR-SHAKEN<small>Autenticação, identificação e jornada comercial</small></a><a href="/stfc-tools/">STFC Tools<small>APIs, evidências, relatórios e rotinas</small></a><a href="/sbc-prosbc/">SBC / ProSBC<small>Borda SIP, interconexão e segurança</small></a><a href="/regulatorio-anatel/">Regulatório Anatel<small>Obrigações, DETRAF, QEML e evidências</small></a><a href="/suporte/">Suporte técnico<small>Banco de horas, RCA e sustentação</small></a></div></div><a href="/segmentos/">Segmentos</a><a class="active" href="/blog/">Blog</a><a href="/contato/">Contato</a></div>
+<a class="btn ghost" href="https://wa.me/554732300435?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20ZICTEC%20e%20quero%20falar%20com%20um%20especialista%20sobre%20Blog%20ZICTEC." rel="noopener" target="_blank">Falar com especialista</a>
+</nav></header><section class="hero"><div class="hero-inner"><span class="eyebrow">Telecom, voz e regulação</span><h1>Numeração STFC em 2026: Áreas Locais por DDD e impactos para operadoras</h1><p>Entenda como as Áreas Locais do STFC passaram a coincidir com os DDDs em 2026 e o que revisar em roteamento, bilhetagem e cadastros.</p><div class="meta"><span>Publicado e atualizado em 21/09/2026</span><span>Leitura técnica</span><span>ZICTEC</span></div></div></section><main class="content-wrap"><article class="article did-article"><figure class="article-figure editorial-figure"><img alt="Arte ZICTEC sobre numeração STFC, Áreas Locais e DDD" loading="eager" src="assets/blog/numeracao-stfc-areas-locais-hero-zictec.png"/><figcaption>Numeração STFC: visão regulatória e operacional. Arte editorial ZICTEC.</figcaption></figure><p>A organização geográfica da telefonia fixa brasileira mudou de forma
+relevante em 2026. Desde <strong>21 de junho de 2026</strong>, a Área
+Local do Serviço Telefônico Fixo Comutado (STFC) passou a coincidir, em
+todo o país, com a respectiva Área de Numeração identificada pelo
+<strong>Código Nacional — o conhecido DDD</strong>.</p>
+<p>Na prática, os municípios que utilizam o mesmo DDD agora pertencem à
+mesma Área Local do STFC. Com a conclusão do cronograma da Anatel, o
+país passou a ter <strong>67 Áreas Locais</strong>, uma para cada Código
+Nacional geográfico.</p>
+<p>A mudança simplifica o desenho regulatório, mas exige atenção de
+operadoras, provedores e integradores. Sistemas legados podem ainda
+depender de antigas Áreas Locais municipais, associações rígidas entre
+DDD e UF ou recortes históricos do Plano Geral de Outorgas (PGO). Esses
+critérios já não são suficientes para reconstruir a Área Local
+vigente.</p>
+<blockquote>
+<p><strong>Em uma frase:</strong> desde 21/06/2026, Área Local do STFC e
+Área de Numeração/CN passaram a ter os mesmos limites geográficos.</p>
+</blockquote>
+<figure class="article-figure editorial-figure">
+<img alt="Mapa dos 67 Códigos Nacionais do Brasil com fonte PGCN Anatel e base IBGE" loading="lazy" src="assets/blog/mapa-codigos-nacionais-brasil-anatel-ibge.png"/>
+<figcaption aria-hidden="true">Mapa dos Códigos Nacionais do
+Brasil</figcaption>
+</figure>
+<p><em>Figura 1 — Códigos Nacionais (CN/DDD) vigentes. Fonte dos
+códigos: PGCN/Anatel; base cartográfica: IBGE. Os limites estaduais e de
+CN foram diferenciados para facilitar a leitura.</em></p>
+<h2 id="resumo-quatro-conceitos-que-não-devem-ser-confundidos">Resumo:
+quatro conceitos que não devem ser confundidos</h2>
+<table>
+<colgroup>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+<col style="width: 33%"/>
+</colgroup>
+<thead>
+<tr class="header">
+<th>Conceito</th>
+<th>O que representa</th>
+<th>Impacto prático</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>CN/DDD</strong></td>
+<td>Identificador de dois algarismos de uma Área de Numeração</td>
+<td>Compõe o número nacional e orienta a marcação entre áreas
+distintas</td>
+</tr>
+<tr class="even">
+<td><strong>Área Local do STFC</strong></td>
+<td>Área geográfica da modalidade Local do STFC</td>
+<td>Desde 2026, coincide com a Área de Numeração/CN</td>
+</tr>
+<tr class="odd">
+<td><strong>Tratamento Local</strong></td>
+<td>Aplicação das regras e condições de comunicação local entre
+localidades de Áreas Locais distintas, nos casos aprovados pela
+Anatel</td>
+<td>Não altera o DDD nem funde Áreas de Numeração; a marcação continua
+incluindo o CN</td>
+</tr>
+<tr class="even">
+<td><strong>Região e Setor do PGO</strong></td>
+<td>Recortes territoriais ainda descritos no Plano Geral de
+Outorgas</td>
+<td>Nenhum Setor corresponde hoje a uma concessão ativa de STFC, mas os
+recortes ainda podem aparecer em normas, documentos e bases legadas</td>
+</tr>
+</tbody>
+</table>
+<h2 id="o-que-mudou-nas-áreas-locais-do-stfc">O que mudou nas Áreas
+Locais do STFC?</h2>
+<p>Até 2025, dois municípios com o mesmo DDD podiam pertencer a Áreas
+Locais distintas. Isso ocorria porque a Área Local podia corresponder a
+um município ou a um agrupamento específico de municípios e
+localidades.</p>
+<p>O art. 3º do Anexo III da <strong>Resolução Anatel nº
+768/2024</strong> alterou essa lógica: a Área Local do STFC passou a ter
+os mesmos limites da Área de Numeração. O <strong>Acórdão Anatel nº
+202/2025</strong> estabeleceu uma implantação em nove etapas, concluída
+em 21 de junho de 2026 com os Códigos Nacionais de São Paulo.</p>
+<h3 id="o-que-mudou">O que mudou</h3>
+<ul>
+<li>municípios de um mesmo CN passaram a integrar uma única Área Local
+do STFC;</li>
+<li>o total nacional foi reduzido para <strong>67 Áreas
+Locais</strong>;</li>
+<li>chamadas fixas entre municípios do mesmo CN passaram a ser
+classificadas como locais;</li>
+<li>regras de roteamento, tarifação e cadastro baseadas em antigas Áreas
+Locais municipais precisam ser revisadas.</li>
+</ul>
+<h3 id="o-que-não-mudou">O que não mudou</h3>
+<ul>
+<li>os dois algarismos do CN/DDD;</li>
+<li>os oito algarismos do número fixo;</li>
+<li>os nove algarismos do número móvel;</li>
+<li>a necessidade de usar o CN e a marcação aplicável quando a chamada
+ocorre entre Áreas de Numeração distintas;</li>
+<li>a necessidade operacional de preservar município, UF, CNL e outros
+identificadores relevantes para bilhetagem, interconexão, conciliação e
+tributação;</li>
+<li>os recortes territoriais descritos no PGO, embora já não representem
+concessões ativas.</li>
+</ul>
+<h2 id="por-que-a-mudança-exige-revisão-operacional">Por que a mudança
+exige revisão operacional?</h2>
+<p>A equivalência entre Área Local e CN parece simples, mas pode atingir
+diferentes camadas da operação. O risco está menos no formato do número
+e mais nas regras antigas gravadas em sistemas, tabelas, rotas e
+processos internos.</p>
+<h3 id="roteamento-e-classificação-de-chamadas">1. Roteamento e
+classificação de chamadas</h3>
+<p>Regras que identificam uma chamada como local apenas com base em
+município, CNL ou agrupamentos antigos podem produzir classificação
+incorreta. A referência geográfica da Área Local vigente passou a ser a
+Área de Numeração/CN.</p>
+<h3 id="bilhetagem-e-tarifação">2. Bilhetagem e tarifação</h3>
+<p>As regras de rating precisam refletir o desenho atual sem perder a
+granularidade cadastral. Uma Área Local única pode atravessar limites
+estaduais, como ocorre no CN 61, que abrange o Distrito Federal e
+municípios de Goiás.</p>
+<h3 id="interconexão-detraf-e-conciliação">3. Interconexão, DETRAF e
+conciliação</h3>
+<p>A consolidação da Área Local não elimina dados de origem e destino.
+Município, UF, CNL e demais chaves operacionais continuam relevantes
+para conciliação, interconexão e aplicação de contratos.</p>
+<h3 id="cadastros-de-numeração">4. Cadastros de numeração</h3>
+<p>Não é seguro deduzir UF ou antigo Setor do PGO apenas pelo DDD. Há
+Códigos Nacionais presentes em mais de uma UF e em mais de um recorte
+territorial do PGO.</p>
+<h3 id="sistemas-e-integrações-legadas">5. Sistemas e integrações
+legadas</h3>
+<p>Softswitches, SBCs, plataformas de billing, portabilidade,
+antifraude, relatórios e integrações podem conter tabelas anteriores à
+mudança. A atualização deve ser verificada ponta a ponta, não apenas na
+camada de discagem.</p>
+<blockquote>
+<p><strong>Ponto de atenção:</strong> a mudança regulatória não alterou
+o número do assinante, mas pode alterar a forma como uma plataforma
+classifica, roteia ou tarifa determinadas chamadas.</p>
+</blockquote>
+<h2 id="área-local-e-tratamento-local-não-são-a-mesma-coisa">Área Local
+e Tratamento Local não são a mesma coisa</h2>
+<p>Essa é uma das distinções mais importantes.</p>
+<p><strong>Área Local</strong> é a área geográfica de prestação do STFC
+na modalidade Local. Desde a conclusão da implantação em 2026, seus
+limites coincidem com os da Área de Numeração.</p>
+<p><strong>Tratamento Local</strong> é a aplicação das regras e
+condições de uma comunicação local entre localidades que pertencem a
+Áreas Locais — e, portanto, a CNs — distintas, nos casos relacionados
+pela Anatel. O conceito inclui aspectos de prestação e interconexão, não
+apenas tarifação.</p>
+<p>Mesmo quando existe Tratamento Local:</p>
+<ul>
+<li>os CNs permanecem diferentes;</li>
+<li>as Áreas de Numeração não são fundidas;</li>
+<li>o CN continua fazendo parte da marcação;</li>
+<li>aplica-se o procedimento de longa distância previsto para chamadas
+entre Áreas de Numeração distintas.</li>
+</ul>
+<p>Essa regra aparece no art. 20, parágrafo único, do Regulamento de
+Numeração aprovado pela <strong>Resolução Anatel nº
+749/2022</strong>.</p>
+<h2 id="como-fica-a-marcação-das-chamadas">Como fica a marcação das
+chamadas?</h2>
+<p>De forma simplificada:</p>
+<h3 id="dentro-da-mesma-área-local-e-do-mesmo-cn">Dentro da mesma Área
+Local e do mesmo CN</h3>
+<pre class="text"><code>número do assinante</code></pre>
+<p>O Regulamento de Numeração também admite o procedimento de longa
+distância como alternativa.</p>
+<h3 id="entre-áreas-de-numeração-distintas">Entre Áreas de Numeração
+distintas</h3>
+<p>Quando há seleção de prestadora de longa distância:</p>
+<pre class="text"><code>0 + CSP + CN + número do assinante</code></pre>
+<p>Para acessar uma prestadora previamente definida pelo usuário, o art.
+23 da Resolução nº 749/2022 admite:</p>
+<pre class="text"><code>0 + CN + número do assinante</code></pre>
+<h3 id="do-exterior-para-o-brasil">Do exterior para o Brasil</h3>
+<pre class="text"><code>55 + CN + número do assinante</code></pre>
+<p>O sinal <code>+</code> usado em contatos e aplicativos representa o
+código de acesso internacional adotado na origem; ele não é um dígito do
+número do assinante.</p>
+<h2 id="o-formato-do-número-fixo-mudou">O formato do número fixo
+mudou?</h2>
+<p>Não. Para números geográficos do STFC, a estrutura nacional continua
+combinando:</p>
+<ul>
+<li><strong>Código Nacional (CN/DDD):</strong> dois algarismos;</li>
+<li><strong>código de acesso do assinante fixo:</strong> oito
+algarismos, nas séries iniciadas de 2 a 6 na data deste artigo;</li>
+<li><strong>código do país:</strong> 55, quando a chamada se origina no
+exterior.</li>
+</ul>
+<p>O número nacional significativo é formado por
+<code>CN + código de acesso</code>. Os números móveis continuam com nove
+algarismos e séries próprias.</p>
+<h2 id="o-pgo-ainda-importa">O PGO ainda importa?</h2>
+<p>Sim, mas com uma função diferente daquela exercida no antigo modelo
+de concessões.</p>
+<p>O Plano Geral de Outorgas, aprovado pelo <strong>Decreto nº
+6.654/2008</strong>, continua descrevendo quatro Regiões e 31 Setores
+territoriais: os Setores de 1 a 29, 31 e 33. Esses recortes ainda podem
+ser citados em regulamentação, documentos históricos, contratos e bases
+cadastrais.</p>
+<p>Por outro lado, desde <strong>30 de julho de 2026</strong>, nenhum
+Setor corresponde a uma concessão ativa de STFC. A última adaptação foi
+concluída com a assinatura do Termo de Autorização nº 9/2026/Anatel,
+referente à Sercomtel.</p>
+<p>Também é importante separar dois efeitos regulatórios:</p>
+<ol type="1">
+<li>a <strong>Resolução nº 768/2024</strong> e o faseamento do
+<strong>Acórdão nº 202/2025</strong> definiram o desenho atual das Áreas
+Locais por CN;</li>
+<li>os atos de adaptação das antigas concessionárias encerraram as
+concessões e permitiram a prestação do STFC em regime privado.</li>
+</ol>
+<p>Portanto, o Setor do PGO não deve ser usado como substituto do CN nem
+como fronteira da Área Local vigente.</p>
+<figure class="article-figure editorial-figure">
+<img alt="Mapa das Regiões e Setores descritos no PGO, sem representar concessões vigentes" loading="lazy" src="assets/blog/mapa-regioes-setores-pgo-zictec.png"/>
+<figcaption aria-hidden="true">Mapa das Regiões e Setores do
+PGO</figcaption>
+</figure>
+<p><em>Figura 2 — Regiões e Setores ainda descritos no Anexo II do PGO.
+As linhas claras delimitam Setores e as linhas escuras delimitam UFs. O
+mapa não representa concessões vigentes.</em></p>
+<h3 id="por-que-um-ddd-pode-aparecer-em-mais-de-um-setor">Por que um DDD
+pode aparecer em mais de um Setor?</h3>
+<p>Porque CN e Setor foram criados para finalidades diferentes. O CN
+identifica uma Área de Numeração; o Setor é um recorte territorial do
+PGO.</p>
+<p>Alguns exemplos:</p>
+<ul>
+<li>o CN 35 aparece nos Setores 2 e 3, em Minas Gerais;</li>
+<li>o CN 43 aparece nos Setores 19 e 20, no Paraná;</li>
+<li>o CN 67 aparece nos Setores 21 e 22, em Mato Grosso do Sul;</li>
+<li>os CNs 16 e 17 aparecem nos Setores 31 e 33, em São Paulo;</li>
+<li>o CN 61 abrange o Setor 26, no Distrito Federal, e parte do Setor
+24, em Goiás.</li>
+</ul>
+<p>Por isso, quando a associação histórica ou cadastral com Setor for
+necessária, o cruzamento deve ser feito por município/localidade, pela
+redação vigente do PGO e pela base atual do Plano Geral de Códigos
+Nacionais (PGCN).</p>
+<h2 id="exemplo-prático-uma-área-local-em-duas-ufs">Exemplo prático: uma
+Área Local em duas UFs</h2>
+<p>O <strong>CN 61</strong> forma uma única Área Local do STFC, mas
+abrange localidades do Distrito Federal e de Goiás.</p>
+<p>Isso significa que a classificação local é determinada pelo CN.
+Entretanto, os sistemas ainda precisam preservar UF, município e CNL
+para processos como bilhetagem, interconexão, DETRAF, conciliação e
+tributação.</p>
+<p>A mudança de Área Local não apaga a origem geográfica da chamada nem
+transforma DF e GO em uma única unidade fiscal. Ela apenas define que as
+localidades do mesmo CN integram a mesma Área Local do STFC.</p>
+<h2 id="checklist-para-operadoras-provedores-e-integradores">Checklist
+para operadoras, provedores e integradores</h2>
+<p>Ao revisar a operação após a mudança, verifique:</p>
+<ul class="task-list">
+<li><label><input type="checkbox"/>se os recursos de numeração estão
+atribuídos e ativos nas bases aplicáveis;</label></li>
+<li><label><input type="checkbox"/>se o CN do número corresponde à Área
+de Numeração do local de uso;</label></li>
+<li><label><input type="checkbox"/>se roteamento e classificação de
+chamadas usam o desenho atual das Áreas Locais;</label></li>
+<li><label><input type="checkbox"/>se as regras de marcação local e de
+longa distância estão implementadas corretamente;</label></li>
+<li><label><input type="checkbox"/>se os casos de Tratamento Local
+seguem a lista vigente da Anatel;</label></li>
+<li><label><input type="checkbox"/>se plataformas de billing deixaram
+de depender de antigas Áreas Locais municipais;</label></li>
+<li><label><input type="checkbox"/>se município, UF, CNL, CN e demais
+chaves permanecem coerentes entre sistemas;</label></li>
+<li><label><input type="checkbox"/>se os campos de Região e Setor do
+PGO, quando mantidos, são tratados como referências específicas e não
+como substitutos da Área Local vigente;</label></li>
+<li><label><input type="checkbox"/>se relatórios de interconexão,
+DETRAF, conciliação e tributação preservam a granularidade
+necessária;</label></li>
+<li><label><input type="checkbox"/>se integrações, tabelas auxiliares e
+caches foram atualizados e testados.</label></li>
+</ul>
+<h2 id="perguntas-frequentes">Perguntas frequentes</h2>
+<h3 id="o-ddd-mudou-em-2026">O DDD mudou em 2026?</h3>
+<p>Não. A mudança reuniu os municípios do mesmo CN em uma única Área
+Local do STFC, sem alterar os dois algarismos do DDD.</p>
+<h3 id="o-número-do-assinante-fixo-mudou">O número do assinante fixo
+mudou?</h3>
+<p>Não. O número fixo continua com oito algarismos. A alteração atingiu
+o limite geográfico da Área Local.</p>
+<h3 id="toda-chamada-dentro-do-mesmo-ddd-passou-a-ser-local">Toda
+chamada dentro do mesmo DDD passou a ser local?</h3>
+<p>No STFC, os municípios do mesmo CN passaram a integrar a mesma Área
+Local. Portanto, a comunicação fixa dentro desse CN é classificada como
+local.</p>
+<h3 id="tratamento-local-elimina-a-marcação-com-ddd">Tratamento Local
+elimina a marcação com DDD?</h3>
+<p>Não. Entre Áreas de Numeração distintas, o CN continua obrigatório,
+inclusive quando existe Tratamento Local.</p>
+<h3 id="o-setor-do-pgo-define-a-área-local-atual">O Setor do PGO define
+a Área Local atual?</h3>
+<p>Não. Os Setores continuam descritos no PGO e podem aparecer em outras
+referências regulatórias ou cadastrais, mas a Área Local do STFC passou
+a coincidir com o CN.</p>
+<h3 id="é-possível-descobrir-o-setor-apenas-pelo-ddd">É possível
+descobrir o Setor apenas pelo DDD?</h3>
+<p>Nem sempre. Um mesmo CN pode atravessar mais de um Setor, e alguns
+CNs abrangem mais de uma UF. O cruzamento deve considerar município ou
+localidade.</p>
+<h2 id="como-a-zictec-pode-apoiar">Como a ZICTEC pode apoiar</h2>
+<p>Sua operação ainda depende de Áreas Locais municipais ou de
+associações antigas entre DDD, CNL e Setor?</p>
+<p>A ZICTEC pode apoiar a revisão de <strong>numeração, roteamento,
+bilhetagem, cadastros técnicos, interconexão e controles
+operacionais</strong> à luz da configuração vigente do STFC.</p>
+<p><strong>Fale com um especialista:</strong> <a href="https://wa.me/554732300435">WhatsApp +55 47 3230-0435</a><br/>
+<strong>Site:</strong> <a href="https://www.zictec.com.br">www.zictec.com.br</a><br/>
+<strong>Agendamento:</strong> <a href="https://www.calendly.com/zictec/reuniao">www.calendly.com/zictec/reuniao</a></p>
+<h2 id="referências-oficiais">Referências oficiais</h2>
+<ul>
+<li><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2022/1641-resolucao-749">Resolução
+Anatel nº 749/2022 — Regulamento de Numeração</a></li>
+<li><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2024/1973-resolucao-768">Resolução
+Anatel nº 768/2024 — Regulamento de Tarifação do STFC</a></li>
+<li><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2022-resolucao-777">Resolução
+Anatel nº 777/2025 — Regulamento Geral dos Serviços de
+Telecomunicações</a></li>
+<li><a href="https://informacoes.anatel.gov.br/legislacao/resolucoes/2025/2029-resolucao-779">Resolução
+Anatel nº 779/2025 — Glossário aplicável ao Setor de
+Telecomunicações</a></li>
+<li><a href="https://sei.anatel.gov.br/sei/modulos/pesquisa/md_pesq_documento_consulta_externa.php?8-74Kn1tDR89f1Q7RjX8EYU46IzCFD26Q9Xx5QNDbqaGPqjLmEjUMLmmSissxnfIfre4BbJKur4hWOrsE6X7o-WQIVyqFtaaIa8fOgFSh7WIVO3C-mYEp-ZyTjitpF7K">Acórdão
+Anatel nº 202/2025 — faseamento das Áreas Locais e vigências
+correlatas</a></li>
+<li><a href="https://www.gov.br/anatel/pt-br/regulado/competicao/tarifas-e-precos/areas-locais-da-telefonia-fixa">Áreas
+Locais da Telefonia Fixa — Anatel</a></li>
+<li><a href="https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2008/decreto/d6654.htm">Decreto
+nº 6.654/2008 — Plano Geral de Outorgas</a></li>
+<li><a href="https://www.gov.br/anatel/pt-br/assuntos/adaptacao">Anatel
+— adaptação das concessões do STFC</a></li>
+<li><a href="https://www.in.gov.br/web/dou/-/extrato-de-autorizacao-722670946">Termo
+de Autorização nº 9/2026/Anatel — DOU</a></li>
+<li><a href="https://www.anatel.gov.br/dadosabertos/paineis_de_dados/areastarifarias/pgcn.zip">Dados
+abertos do PGCN — Anatel</a></li>
+</ul>
+<blockquote>
+<p><strong>Nota de atualização:</strong> este artigo usa normas e bases
+oficiais consultadas em 21/09/2026. O PGCN, a lista de Tratamento Local
+e os atos da Anatel podem ser atualizados. Os dispositivos da Resolução
+nº 777/2025 com vigência programada para 2027 devem ser reconfirmados
+antes da publicação ou de uso operacional posterior.</p>
+</blockquote>
+<blockquote>
+<p><strong>Aviso:</strong> conteúdo informativo. A aplicação em rede,
+sistemas, contratos, tributação ou interconexão deve considerar as
+características da operação e as bases oficiais vigentes.</p>
+</blockquote></article></main><footer class="footer"><div class="wrap"><div><b>ZICTEC</b><br/>Consultoria técnica e regulatória para operações de voz, STFC, SIP/SBC e Origem Verificada.</div><div>suporte@zictec.com.br • +55 47 3230-0435</div></div></footer></div>
+</body></html>
