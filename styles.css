@@ -23,6 +23,7 @@
 .hero .btn.primary{color:#071831}
 .mobile-nav{display:none;position:relative}.mobile-nav summary{position:relative;z-index:92;cursor:pointer;list-style:none;padding:10px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--navy);font-weight:800}.mobile-nav summary::-webkit-details-marker{display:none}.menu-close-label{display:none}.mobile-nav[open] .menu-open-label{display:none}.mobile-nav[open] .menu-close-label{display:inline}.mobile-nav[open]::before{content:"";position:fixed;inset:0;z-index:80;background:rgba(7,24,49,.36)}.mobile-nav-panel{position:absolute;right:0;top:48px;z-index:91;width:min(330px,calc(100vw - 32px));padding:12px 12px 16px;border:1px solid var(--line);border-radius:18px;background:#fff;box-shadow:0 20px 55px rgba(7,24,49,.25)}.mobile-nav-panel a{display:block;padding:11px 12px;border-radius:10px;color:var(--navy);font-weight:700}.mobile-nav-panel a:hover{background:#f4f7fb}.mobile-nav-panel a:nth-child(n+4):nth-child(-n+7){padding-left:24px;color:var(--muted);font-size:14px}
 .soft .eyebrow,.split .eyebrow{color:#a84400;background:#ffe8d4;border-color:#ffc896}
+.split>*{min-width:0}
 .cta-actions .cta-primary{background:var(--navy);border:1px solid var(--navy);color:#fff}.cta-actions .cta-primary:hover{background:var(--navy2)}
 .cta-tertiary{color:#fff;font-weight:800;text-decoration:underline;text-underline-offset:4px;white-space:nowrap}
 .page-card.featured{outline:2px solid rgba(255,122,26,.42);background:linear-gradient(135deg,#fff8ed,#fff)}
